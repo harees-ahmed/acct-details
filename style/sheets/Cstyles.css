@@ -1,0 +1,122 @@
+
+#LForm{
+    
+    width:100%;
+    padding-top:20px;
+    padding-bottom:20px;
+
+}
+#LForm p{
+    font-size:13px;
+    color:#222;
+    padding-left:10px;
+    margin:0;
+}
+.LMainRow{
+    width:100%;
+    float:left;
+    padding-top:5px;
+    padding-bottom:5px;
+    height:25px;
+
+}
+.LMainRowM{
+    width:100%;
+    float:left;
+    padding-top:5px;
+    padding-bottom:5px;
+    height:50px;
+
+}
+
+.LMainRowL{
+    
+    width:100%;
+    float:left;
+    padding-top:5px;
+    padding-bottom:5px;
+    height:150px;
+
+}
+.LLabel
+{
+    width:20%;
+    padding-right:2%;
+    line-height:13px;
+    font-size:13px;
+    padding-top:4px;
+    padding-bottom:3px;
+    text-align:right;
+    float:left;
+}
+.LTextB
+{
+    width:24%;
+    padding-right:2%;
+    height:20px;    
+    text-align:left;
+    float:left;
+
+}
+.LTextBM
+{
+    width:228px;
+    height:17px;
+    border:1px solid #444;
+    text-align:left;
+    float:left;
+}
+.LDropBM
+{
+    width:230px;
+    height:20px;
+    border:1px solid #444;
+    text-align:left;
+    float:left;
+}
+.LTextL
+{
+    width:76%;
+    padding-right:2%;
+    height:20px;    
+    text-align:left;
+    float:left;
+}
+
+
+.LTextBS
+{
+    width:20%;
+    margin-right:2%;
+    height:16px;
+    border:1px solid #444;
+    text-align:left;
+    float:left;
+}
+.LDropBS
+{
+    width:30%;
+    height:20px;
+    border:1px solid #444;
+    text-align:left;
+    float:left;
+}
+.LDropBL
+{
+    width:640px;
+    height:20px;
+    border:1px solid #444;
+    text-align:left;
+    float:left;
+}
+.LTextAreaBL
+{
+    vertical-align:top;
+    width:636px;
+    margin-right:10px;
+    height:125px;
+    border:1px solid #444;
+    text-align:left;
+    float:left;
+    clear:both;
+}
