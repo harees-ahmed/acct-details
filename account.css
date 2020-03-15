@@ -1,7 +1,8 @@
 
 
 body {
-  background: #C5E1A5;
+  background: #e8f4f87a;
+  margin:5px;
 }
 form {
   width: 60%;
@@ -77,4 +78,12 @@ button {
 button:hover {
   background: #8BC34A;
   color: #ffffff;
+}
+
+#WebWrapHeader {
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    float: left;
+    height: auto;
 }
