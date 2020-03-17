@@ -18,10 +18,20 @@ label {
   position: relative;
   margin: 40px 0px;
 }
+
+label span {
+color: RGB(125,125,125);
+}
+
+
+textarea::-webkit-input-placeholder {
+  color: #666666a6;
+}
+
 .label-txt {
   position: absolute;
   top: -1.6em;
-  padding: 10px;
+  padding: 5px;
   font-family: sans-serif;
   font-size: .8em;
   letter-spacing: 1px;
@@ -35,6 +45,7 @@ label {
   border: none;
   outline: none;
 }
+
 
 .line-box {
   position: relative;
@@ -52,6 +63,7 @@ label {
   transform: translateX(-50%);
   background: #8BC34A;
   transition: ease .6s;
+  
 }
 
 .input:focus + .line-box .line {
