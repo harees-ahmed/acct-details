@@ -277,9 +277,11 @@ background:url(../images/ICO_Email_H.png);
 }
 .SmallPara
 {
-	font-size:14px;
+	font-size:16px;
 	line-height:16px;
 	text-align:justify;
+	margin: 10px auto;
+	list-style-type: lower-roman;
 }
 #WrpMainMenu ul li {
 	margin: 0;
@@ -702,6 +704,7 @@ color:#FFF;
 	float: left;
 	margin-top: 0;
 	margin-right: 0;
+	padding: 2%;
 	padding-bottom: 0px;
 	margin-bottom: 25px;
 	margin-left: 0;
