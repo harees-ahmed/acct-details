@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<!-- saved from url=(0023)https://cms.fia.gov.pk/ -->
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><title>
+	FIA | Federal Investigation Agency
+</title>
+    <style>
+        body.notfound, body.signin {
+            background: #FFF;
+        }
+
+        .signinpanel form {
+            /*background: #f5f5f5;*/
+            background: #428bca;
+            color: #fff;
+        }
+
+        .signin-info h5 {
+            color: #17a18d;
+            font-size: 15px;
+            line-height: 22px;
+            margin: 0;
+            text-transform: uppercase;
+        }
+
+        .signinpanel ul li {
+            color: #333;
+            padding: 4px 0;
+        }
+
+        .logopanel {
+            margin-bottom: 40px;
+            text-align: center;
+        }
+
+        .signinpanel {
+            margin-top: 3%;
+            text-align: center;
+        }
+
+            .signinpanel form {
+                padding: 20px 25px;
+            }
+    </style>
+<style type="text/css">.jqstooltip { position: absolute;left: 0px;top: 0px;visibility: hidden;background: rgb(0, 0, 0) transparent;background-color: rgba(0,0,0,0.6);filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000);-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000)";color: white;font: 10px arial, san serif;text-align: left;white-space: nowrap;padding: 5px;border: 1px solid white;z-index: 10000;}.jqsfield { color: white;font: 10px arial, san serif;text-align: left;}</style></head>
+
+<body class="signin">
+    <link href="./Login_files/style.default.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" async="" src="./Login_files/recaptcha__en.js.download" crossorigin="anonymous" integrity="sha384-z/b6fleGPgQ5vn6jEWL2AgppzIbd1EhPqd0wf0J9vy92dVYtOxZIOAordrUh+mBN"></script><script type="text/javascript" src="./Login_files/jquery-1.11.1.min.js.download"></script>
+    <script type="text/javascript" src="./Login_files/jquery-migrate-1.2.1.min.js.download"></script>
+    <script type="text/javascript" src="./Login_files/bootstrap.min.js.download"></script>
+    <script type="text/javascript" src="./Login_files/jquery.sparkline.min.js.download"></script>
+    <script type="text/javascript" src="./Login_files/toggles.min.js.download"></script>
+    <script type="text/javascript" src="./Login_files/retina.min.js.download"></script>
+    <script type="text/javascript" src="./Login_files/custom.js.download"></script>
+    
+
+    <script type="text/javascript">
+
+
+    var verifyCallback = function (response) {
+           
+            var Data = JSON.stringify({ response_id: response });
+
+            $.ajax({
+                url: "Login.aspx/verifyCaptcha",
+                data: Data,
+                type: "POST",
+                dataType: "json",
+                contentType: "application/json; charset=utf-8",
+                success: function (r) {
+
+                    var res = JSON.parse(r.d);
+                    res = res['success'];
+
+                    if (res = true) {
+
+                        $('#btnLogin').prop("disabled", false);
+
+                    }
+
+                },
+                error: function (data, success, error) {
+                    alert("Error : " + error);
+                }
+            });
+             
+        };
+
+      var onloadCallback = function() {
+       
+          grecaptcha.render('html_element', {
+              'sitekey': '6Lf_YrEgAAAAABfqZ8xNPBSxswGCV5r9ZmnN7pKc',
+              'callback': verifyCallback,
+              'theme': 'light'
+          });
+
+
+
+      };
+    </script>
+
+    <section>
+        <div class="signinpanel">
+            <div class="row">
+                
+                <!-- logopanel -->
+            </div>
+            <div class="row">
+                <div class="col-md-2">
+                </div>
+                <div class="col-md-8">
+                    <form method="post" action="https://cms.fia.gov.pk/" id="form1">
+<div class="aspNetHidden">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUJLTg4NjkzMjAwZGQZ/fh71VZItkFTGafxJE0PGgT+U4jOg9TVAJMkFZWK3Q==">
+</div>
+
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="C2EE9ABB">
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEdAAThq8NDbWzGwPKNAkqb2G5RY3plgk0YBAefRz3MyBlTcHY2+Mc6SrnAqio3oCKbxYainihG6d/Xh3PZm3b5AoMQni30AL2QKHrhSJ8eofom209q9UGNVjJu5USbhT2dYoA=">
+</div>
+                        <h4 class="nomargin">Sign In</h4>
+                        <p class="mt5 mb20">Login to access your account</p>
+                        <input name="txtUserName" type="password" id="txtUserName" class="form-control uname" placeholder="Access ID">
+                        <input name="txtPassword" type="password" id="txtPassword" class="form-control pword" placeholder="Password">
+                        
+                        
+                        <br>
+                        <div id="html_element" style="margin: auto; width: 75%;"><div style="width: 304px; height: 78px;"><div><iframe title="reCAPTCHA" src="./Login_files/anchor.html" width="304" height="78" role="presentation" name="a-2hfxr2fhe5sn" frameborder="0" scrolling="no" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox"></iframe></div><textarea id="g-recaptcha-response" name="g-recaptcha-response" class="g-recaptcha-response" style="width: 250px; height: 40px; border: 1px solid rgb(193, 193, 193); margin: 10px 25px; padding: 0px; resize: none; display: none;"></textarea></div><iframe style="display: none;" src="./Login_files/saved_resource.html"></iframe></div>
+                        
+                        <div style="float: right;">
+                            <input type="submit" name="btnLogin" value="Sign In" id="btnLogin" class="btn btn-success btn-block" disabled="true" style="width:130px;">
+                        </div>
+                        
+                    </form>
+                    <div class="signup-footer">
+                        
+                    </div>
+                </div>
+                <!-- col-sm-5 -->
+            </div>
+            <!-- row -->
+        </div>
+        <!-- signin -->
+
+    </section>
+    
+    <script src="./Login_files/api.js.download" async="" defer=""></script>
+
+
+<div style="background-color: rgb(255, 255, 255); border: 1px solid rgb(204, 204, 204); box-shadow: rgba(0, 0, 0, 0.2) 2px 2px 3px; position: absolute; transition: visibility 0s linear 0.3s, opacity 0.3s linear 0s; opacity: 0; visibility: hidden; z-index: 2000000000; left: 0px; top: -10000px;"><div style="width: 100%; height: 100%; position: fixed; top: 0px; left: 0px; z-index: 2000000000; background-color: rgb(255, 255, 255); opacity: 0.05;"></div><div class="g-recaptcha-bubble-arrow" style="border: 11px solid transparent; width: 0px; height: 0px; position: absolute; pointer-events: none; margin-top: -11px; z-index: 2000000000;"></div><div class="g-recaptcha-bubble-arrow" style="border: 10px solid transparent; width: 0px; height: 0px; position: absolute; pointer-events: none; margin-top: -10px; z-index: 2000000000;"></div><div style="z-index: 2000000000; position: relative;"><iframe title="recaptcha challenge expires in two minutes" src="./Login_files/bframe.html" name="c-2hfxr2fhe5sn" frameborder="0" scrolling="no" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox" style="width: 100%; height: 100%;"></iframe></div></div></body></html>
