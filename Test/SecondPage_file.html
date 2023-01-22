@@ -1,0 +1,1224 @@
+<!DOCTYPE html>
+<!-- saved from url=(0109)https://cms.fia.gov.pk/CMU/UInterfaces/UI_ONLINE_COMPLAINTS_PENDING_DETAILS.aspx?CID=6kznuE/vmSms1I8AoUNy+w== -->
+<html xmlns="http://www.w3.org/1999/xhtml"><head id="Head1"><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>
+	Federal Investigation Agency
+</title><link href="./SecondPage_file/UISheets.css" rel="stylesheet"><link href="./SecondPage_file/BootStrapFonts.css" rel="stylesheet"><link href="./SecondPage_file/BootStrapStyles.css" rel="stylesheet"><link href="./SecondPage_file/jquery-ui.css" rel="stylesheet">
+            <script src="./SecondPage_file/jquery.js.download"></script>
+        <script src="./SecondPage_file/jquery-ui.js.download"></script>
+
+    
+
+        <script>
+            $(function () {
+                $(".Wrp_Insert_Small_DTE").datepicker({ minDate: -365, maxDate: "+0M +0D" });
+            });
+            function ShowPopup(message) {
+                $(function () {
+                    $("#dialog").html(message);
+                    $("#dialog").dialog({
+                        title: "Complaint Registration",
+                        buttons: {
+                            Close: function () {
+                                $(this).dialog('close');
+                            }
+                        },
+                        modal: true
+                    });
+                });
+            };
+        </script>
+</head>
+<body class="w3-light-grey">
+              
+        <nav class="w3-sidebar w3-collapse w3-white w3-animate-left" style="z-index:3;width:300px;" id="mySidebar"><br>
+  
+  <div class="w3-bar-block">
+    <a href="#" class="w3-bar-item w3-button w3-padding-16 w3-hide-large w3-dark-grey w3-hover-black" onclick="w3_close()" title="close menu"><i class="fa fa-remove fa-fw"></i>&nbsp; Close Menu</a>
+                              <table id="DL_ACCESS" cellspacing="0" cellpadding="0" style="width:100%;border-collapse:collapse;">
+	<tbody><tr>
+		<td>                               
+                             <a href="#" class="w3-bar-item w3-button w3-padding w3-blue"><i class="fa fa-area-chart fa-fw"></i> Overview</a>
+                            </td>
+	</tr><tr>
+		<td>                               
+                             <a href="#" class="w3-bar-item w3-button w3-padding"><i class="fa fa-pencil fa-fw"></i> Complaint Registration</a>
+                            </td>
+	</tr><tr>
+		<td>                               
+                             <a href="file:///C:/Users/ccrccomplaint/Desktop/Website/MainPage_file.html" class="w3-bar-item w3-button w3-padding"><i class="fa fa-eye fa-fw"></i> Online Complaints</a>
+                            </td>
+	</tr><tr>
+		<td>                               
+                             <a href="#" class="w3-bar-item w3-button w3-padding"><i class="fa fa-filter fa-fw"></i> Verifications</a>
+                            </td>
+	</tr><tr>
+		<td>                               
+                             <a href="#" class="w3-bar-item w3-button w3-padding"><i class="fa fa-tasks fa-fw"></i> Enquiry/ Case Summon</a>
+                            </td>
+	</tr><tr>
+		<td>                               
+                             <a href="#" class="w3-bar-item w3-button w3-padding"><i class="fa fa-pencil fa-fw"></i> Summon Details</a>
+                            </td>
+	</tr><tr>
+		<td>                               
+                             <a href="#" class="w3-bar-item w3-button w3-padding"><i class="fa fa-sign-out fa-fw"></i> Signout</a>
+                            </td>
+	</tr>
+</tbody></table>
+                                        
+
+  </div>
+</nav>
+
+
+        <div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+        
+        <div class="w3-main" style="margin-left:300px;margin-top:43px;">  
+            
+     <header class="w3-container" style="padding-top:22px">
+    <h3><b>Complaint Registration</b></h3>
+  </header>
+    <div id="Wrp_InsertForm">
+   
+    
+    <div id="dialog" style="display: none"></div>
+<div class="Wrp_Insert_Small"><span id="MainCPH_LBL_COMPLAINT_TYPE_ID" class="Wrp_Insert_Small_Label">Complaint Type</span><select name="ctl00$MainCPH$UI_COMPLAINT_TYPE_ID" id="MainCPH_UI_COMPLAINT_TYPE_ID" class="Wrp_Insert_Small_DD">
+	<option value="1">Complaint</option>
+	<option value="2">Source Report</option>
+	<option value="3">Against FIA Staff</option>
+	<option value="4">Anonymous Complaint</option>
+	<option value="5">Suspicious Transaction Report (STR)</option>
+	<option value="6">High Profile Complaints</option>
+	<option value="7">Mutual Legal Assistance (MLA)</option>
+
+</select></div>
+<div class="Wrp_Insert_Small"><span id="MainCPH_LBL_REPORT_DATE_TIME" class="Wrp_Insert_Small_Label">Received On</span><input name="ctl00$MainCPH$UI_REPORT_DATE_TIME" type="text" value="1/17/2023 2:47:20 PM" readonly="readonly" id="MainCPH_UI_REPORT_DATE_TIME" class="Wrp_Insert_Small_Input rt"></div>
+<div class="Wrp_Insert_Small"><span id="MainCPH_LBL_REGISTERED_OFFICE_ID" class="Wrp_Insert_Small_Label">Zone Name</span><select name="ctl00$MainCPH$UI_REGISTERED_OFFICE_ID" onchange="javascript:setTimeout(&#39;__doPostBack(\&#39;ctl00$MainCPH$UI_REGISTERED_OFFICE_ID\&#39;,\&#39;\&#39;)&#39;, 0)" id="MainCPH_UI_REGISTERED_OFFICE_ID" class="Wrp_Insert_Small_DD">
+	<option selected="selected" value="10">Director Cyber Crime</option>
+
+</select></div>
+<div class="Wrp_Insert_Small"><span id="MainCPH_LBL_RECEIVING_MODE_ID" class="Wrp_Insert_Small_Label">Received Via</span><select name="ctl00$MainCPH$UI_RECEIVING_MODE_ID" id="MainCPH_UI_RECEIVING_MODE_ID" class="Wrp_Insert_Small_DD">
+	<option value="1">Online Form</option>
+
+</select></div>
+<div class="Wrp_Insert_Small"><span id="MainCPH_LBL_OCCURANCE_CITY" class="Wrp_Insert_Small_Label">Occurance <i class="sm-lbl">(City)</i></span><select name="ctl00$MainCPH$UI_OCCURANCE_CITY" id="MainCPH_UI_OCCURANCE_CITY" class="Wrp_Insert_Small_DD">
+	<option value="0"> Select City</option>
+	<option value="261">Abbotabad</option>
+	<option value="2">Abdul Hakim</option>
+	<option value="3">Ahmadpur East</option>
+	<option value="4">Ahmadpur Sial</option>
+	<option value="5">Alipur</option>
+	<option value="6">Alipur Chatha</option>
+	<option value="325">Alyabad Hunza</option>
+	<option value="262">Amangarh</option>
+	<option value="7">Arifwala</option>
+	<option value="311">Askole</option>
+	<option value="312">Astore</option>
+	<option value="8">Attock</option>
+	<option value="349">Awaran</option>
+	<option value="204">Badah</option>
+	<option value="205">Badin</option>
+	<option value="307">Bagh</option>
+	<option value="9">Bahawalnagar</option>
+	<option value="10">Bahawalpur</option>
+	<option value="356">Baltistan</option>
+	<option value="263">Banu</option>
+	<option value="350">Barkhan</option>
+	<option value="11">Basirpur</option>
+	<option value="264">Bat Khela</option>
+	<option value="265">Batagram</option>
+	<option value="12">Besham</option>
+	<option value="13">Bhai Pheru</option>
+	<option value="14">Bhakkar</option>
+	<option value="15">Bhalwal</option>
+	<option value="16">Bhera</option>
+	<option value="305">Bhimber</option>
+	<option value="171">Bolan</option>
+	<option value="266">Buner</option>
+	<option value="313">Bunji (or Boanzhi)</option>
+	<option value="17">Burewala</option>
+	<option value="172">Chagai</option>
+	<option value="18">Chak Azam Sahu Leiah</option>
+	<option value="19">Chak Jhumra</option>
+	<option value="20">Chak Sarwar Shahid</option>
+	<option value="21">Chakwal</option>
+	<option value="329">Chalt (Nagar)</option>
+	<option value="173">Chaman</option>
+	<option value="267">Charsada</option>
+	<option value="22">Chawinda</option>
+	<option value="23">Chichawatni</option>
+	<option value="314">Chilas</option>
+	<option value="315">Chillinji</option>
+	<option value="24">Chiniot</option>
+	<option value="370">Chiran</option>
+	<option value="25">Chishtian</option>
+	<option value="268">Chitral</option>
+	<option value="26">Chuhar Kana</option>
+	<option value="27">Chunian</option>
+	<option value="206">Dadu</option>
+	<option value="207">Daharki</option>
+	<option value="28">Daska</option>
+	<option value="29">Daud Khel</option>
+	<option value="320">Dayore - Gilgit</option>
+	<option value="174">Dera Allah Yar</option>
+	<option value="175">Dera Bugti</option>
+	<option value="30">Dera Ghazi Khan</option>
+	<option value="269">Dera Ismail Khan</option>
+	<option value="176">Dera Murad Jamali</option>
+	<option value="359">Diamer</option>
+	<option value="208">Digri</option>
+	<option value="31">Dijkot</option>
+	<option value="32">Dina</option>
+	<option value="33">Dinga</option>
+	<option value="34">Dipalpur</option>
+	<option value="270">Dir</option>
+	<option value="35">Dullewalla</option>
+	<option value="36">Dunga Bunga</option>
+	<option value="37">Dunyapur</option>
+	<option value="38">Faisalabad</option>
+	<option value="39">Faqirwali</option>
+	<option value="40">Fatehjang</option>
+	<option value="41">Fazilpur</option>
+	<option value="42">Firozwala</option>
+	<option value="43">Fort Abbas</option>
+	<option value="317">Gakuch</option>
+	<option value="209">Gambat</option>
+	<option value="44">Garh Maharaja</option>
+	<option value="177">Gawadar</option>
+	<option value="45">Ghakhar</option>
+	<option value="357">Ghanche</option>
+	<option value="316">Ghangche</option>
+	<option value="210">Ghauspur</option>
+	<option value="318">Ghizer</option>
+	<option value="211">Ghotki</option>
+	<option value="337">Ghulmat (Nagar)</option>
+	<option value="319">Gilgit</option>
+	<option value="46">Gojra</option>
+	<option value="326">Gorikot</option>
+	<option value="212">Guddu</option>
+	<option value="47">Gujar Khan</option>
+	<option value="48">Gujranwala</option>
+	<option value="49">Gujrat</option>
+	<option value="327">Gulmit</option>
+	<option value="50">Hadali</option>
+	<option value="51">Hafizabad</option>
+	<option value="213">Hala</option>
+	<option value="271">Hangu</option>
+	<option value="272">Haripur</option>
+	<option value="351">Harnai</option>
+	<option value="52">Harunabad</option>
+	<option value="53">Hasan Abdal</option>
+	<option value="54">Hasilpur</option>
+	<option value="55">Haveli Lakha</option>
+	<option value="56">Hazro</option>
+	<option value="178">Hub</option>
+	<option value="57">Hujra Shah Muqim</option>
+	<option value="360">Hunza</option>
+	<option value="334">Hussain Abad</option>
+	<option value="214">Hyderabad</option>
+	<option value="339">Ishkoman</option>
+	<option value="1">Islamabad</option>
+	<option value="215">Jacobabad</option>
+	<option value="179">Jaffarabad</option>
+	<option value="328">Jaglot</option>
+	<option value="273">Jahangira</option>
+	<option value="58">Jahania</option>
+	<option value="323">Jalalabad Gilgit</option>
+	<option value="59">Jalalpur Bhattian</option>
+	<option value="60">Jalalpur Jattan</option>
+	<option value="61">Jalalpur Pirwala</option>
+	<option value="62">Jamke Chima</option>
+	<option value="63">Jampur</option>
+	<option value="364">Jamshoro</option>
+	<option value="64">Jaranwala</option>
+	<option value="65">Jatoi</option>
+	<option value="66">Jauharabad</option>
+	<option value="180">Jhal Magsi</option>
+	<option value="67">Jhang</option>
+	<option value="68">Jhawarian</option>
+	<option value="69">Jhelum</option>
+	<option value="216">Jhudo</option>
+	<option value="324">Jutial Gilgit</option>
+	<option value="70">Kabirwala</option>
+	<option value="352">Kachi</option>
+	<option value="71">Kahna Nau</option>
+	<option value="72">Kahror Pakka</option>
+	<option value="181">Kalat</option>
+	<option value="73">Kalur Kot</option>
+	<option value="74">Kamalia</option>
+	<option value="365">Kamber Shahdadkot</option>
+	<option value="75">Kamir</option>
+	<option value="76">Kamoke</option>
+	<option value="77">Kamra Cantonment</option>
+	<option value="217">Kandiaro</option>
+	<option value="218">Karachi</option>
+	<option value="366">Karachi Central</option>
+	<option value="367">Karachi East</option>
+	<option value="368">Karachi South</option>
+	<option value="369">Karachi West</option>
+	<option value="274">Karak</option>
+	<option value="338">Karimabad (Hunza)</option>
+	<option value="78">Karor Lal Esan</option>
+	<option value="219">Kashmor</option>
+	<option value="79">Kasur</option>
+	<option value="182">Kech (Turbat)</option>
+	<option value="220">Khairpur</option>
+	<option value="221">Khairpur Nathan Shah</option>
+	<option value="80">Khairpur Tamewali</option>
+	<option value="275">Khalabat</option>
+	<option value="333">Khana Abad</option>
+	<option value="222">Khandhkot</option>
+	<option value="81">Khanewal</option>
+	<option value="82">Khangah Dogran</option>
+	<option value="83">Khanpur</option>
+	<option value="340">Khaplu</option>
+	<option value="276">Kharak</option>
+	<option value="183">Kharan</option>
+	<option value="84">Kharian</option>
+	<option value="85">Kharian Cantonment</option>
+	<option value="358">Kharmang</option>
+	<option value="86">Khewra</option>
+	<option value="223">Khipro</option>
+	<option value="87">Khundian</option>
+	<option value="88">Khurrianwala</option>
+	<option value="89">Khushab</option>
+	<option value="184">Khuzdar</option>
+	<option value="277">Kohat</option>
+	<option value="278">Kohistan</option>
+	<option value="185">Kohlu</option>
+	<option value="90">Kot Abdul Malik</option>
+	<option value="91">Kot Addu</option>
+	<option value="224">Kot Diji</option>
+	<option value="92">Kot Mumin</option>
+	<option value="93">Kot Radha Kishan</option>
+	<option value="306">Kotli</option>
+	<option value="225">Kotri</option>
+	<option value="279">Kulachi</option>
+	<option value="94">Kundian</option>
+	<option value="95">Kunjah</option>
+	<option value="226">Kunri</option>
+	<option value="96">Lahore</option>
+	<option value="280">Lakki Marwat</option>
+	<option value="97">Lala Mosa</option>
+	<option value="98">Lalian</option>
+	<option value="227">Larkana</option>
+	<option value="186">Lasbela</option>
+	<option value="99">Layyah</option>
+	<option value="374">Lehri</option>
+	<option value="100">Liaqatabad</option>
+	<option value="101">Liaquatpur</option>
+	<option value="102">Lodhran</option>
+	<option value="187">Loralai</option>
+	<option value="281">Lower Dir</option>
+	<option value="103">Ludhewala Waraich</option>
+	<option value="104">Mailsi</option>
+	<option value="282">Malakand</option>
+	<option value="105">Malakwal</option>
+	<option value="371">Malir</option>
+	<option value="106">Mamu Kanjan</option>
+	<option value="107">Mananwala Jodh Singh</option>
+	<option value="108">Mandi Bahauddin</option>
+	<option value="283">Mansehra</option>
+	<option value="284">Mardan</option>
+	<option value="188">Mastung</option>
+	<option value="372">Matiari</option>
+	<option value="228">Matli</option>
+	<option value="332">Mayoon</option>
+	<option value="229">Mehar</option>
+	<option value="230">Mehrabpur</option>
+	<option value="109">Mian Channun</option>
+	<option value="110">Mianwali</option>
+	<option value="111">Minchinabad</option>
+	<option value="285">Mingora</option>
+	<option value="341">Minimerg</option>
+	<option value="304">Mirpur</option>
+	<option value="231">Mirpur Khas</option>
+	<option value="232">Mirpur Mathelo</option>
+	<option value="342">Misgar</option>
+	<option value="112">Mitha Tiwana</option>
+	<option value="233">Moro</option>
+	<option value="113">Multan</option>
+	<option value="114">Muridke</option>
+	<option value="115">Murree</option>
+	<option value="189">Musakhel</option>
+	<option value="116">Mustafabad</option>
+	<option value="308">Muzaffarabad</option>
+	<option value="117">Muzaffargarh</option>
+	<option value="361">Nagar</option>
+	<option value="336">Nagar Proper</option>
+	<option value="118">Nankana Sahib</option>
+	<option value="119">Narang</option>
+	<option value="120">Narowal</option>
+	<option value="190">Naseerabad</option>
+	<option value="331">Nasir Abad</option>
+	<option value="234">Nasirabad</option>
+	<option value="235">Naudero</option>
+	<option value="236">Naushahro Feroze</option>
+	<option value="121">Naushera Virkan</option>
+	<option value="237">Nawabshah</option>
+	<option value="286">Nowshera</option>
+	<option value="191">Nushki</option>
+	<option value="122">Okara</option>
+	<option value="322">oshikhanda Gilgit</option>
+	<option value="287">Pabbi</option>
+	<option value="123">Pakpattan</option>
+	<option value="192">Panjgur</option>
+	<option value="238">Pano Aqil</option>
+	<option value="193">Pasni</option>
+	<option value="124">Pasrur</option>
+	<option value="343">Passu</option>
+	<option value="125">Pattoki</option>
+	<option value="288">Peshawar</option>
+	<option value="126">Phalia</option>
+	<option value="127">Pindi Bhattian</option>
+	<option value="128">Pindi Gheb</option>
+	<option value="129">Pir Mahal</option>
+	<option value="239">Pirjo Goth</option>
+	<option value="194">Pishin</option>
+	<option value="309">Pllandri, Azad Kashmir</option>
+	<option value="240">Qambar</option>
+	<option value="335">Qasimabad Masoot (Nagar)</option>
+	<option value="130">Qila Didar Singh</option>
+	<option value="195">Qilla Abdullah</option>
+	<option value="196">Qilla Saifullah</option>
+	<option value="197">Quetta</option>
+	<option value="131">Rabwah</option>
+	<option value="132">Rahim Yar Khan</option>
+	<option value="133">Raiwind</option>
+	<option value="134">Raja Jang</option>
+	<option value="135">Rajanpur</option>
+	<option value="241">Ratodero</option>
+	<option value="310">Rawalakot</option>
+	<option value="136">Rawalpindi</option>
+	<option value="137">Renala Khurd</option>
+	<option value="289">Risalpur Cantonment</option>
+	<option value="242">Rohri</option>
+	<option value="138">Sadiqabad</option>
+	<option value="139">Safdarabad</option>
+	<option value="140">Sahiwal</option>
+	<option value="243">Sakrand</option>
+	<option value="141">Samasata</option>
+	<option value="142">Sambrial</option>
+	<option value="143">Samundri</option>
+	<option value="144">Sangala Hill</option>
+	<option value="244">Sanghar</option>
+	<option value="145">Sarai Alamgir</option>
+	<option value="146">Sargodha</option>
+	<option value="245">Sehwan</option>
+	<option value="246">Setharja</option>
+	<option value="290">Shabqadar</option>
+	<option value="247">Shahdadkot</option>
+	<option value="248">Shahdadpur</option>
+	<option value="373">Shaheed Benazirabad</option>
+	<option value="147">Shahkot</option>
+	<option value="148">Shakargarh</option>
+	<option value="291">Shangla</option>
+	<option value="149">Sharqpur</option>
+	<option value="150">Sheikhupura</option>
+	<option value="353">Sherani</option>
+	<option value="362">Shigar</option>
+	<option value="249">Shikarpur</option>
+	<option value="344">Shimshal</option>
+	<option value="151">Shorkot</option>
+	<option value="152">Shujaabad</option>
+	<option value="153">Sialkot</option>
+	<option value="198">Sibi</option>
+	<option value="154">Sillanwali</option>
+	<option value="250">Sita Road</option>
+	<option value="345">Skardu</option>
+	<option value="354">Sohbatpur</option>
+	<option value="251">Sujawal</option>
+	<option value="155">Sukheke</option>
+	<option value="252">Sukkur</option>
+	<option value="321">Sultanabad - Gilgit</option>
+	<option value="199">Surab</option>
+	<option value="346">Sust</option>
+	<option value="292">Swabi</option>
+	<option value="293">Swat</option>
+	<option value="375">Taftan</option>
+	<option value="347">Taghafari</option>
+	<option value="294">Takht-i Bhai</option>
+	<option value="156">Talagang</option>
+	<option value="157">Tandlianwala</option>
+	<option value="253">Tando Adam</option>
+	<option value="254">Tando Allahyar</option>
+	<option value="255">Tando Jam</option>
+	<option value="256">Tando Muhammad Khan</option>
+	<option value="295">Tangi</option>
+	<option value="296">Tank</option>
+	<option value="158">Taunsa</option>
+	<option value="159">Taxila</option>
+	<option value="160">Taxila Cantonment</option>
+	<option value="297">Thal</option>
+	<option value="257">Tharparkar</option>
+	<option value="258">Thatta</option>
+	<option value="330">Thole (Nagar)</option>
+	<option value="348">Thorar</option>
+	<option value="259">Thul</option>
+	<option value="298">Timargara</option>
+	<option value="161">Toba Tek Singh</option>
+	<option value="299">Topi</option>
+	<option value="300">Tordher</option>
+	<option value="363">Torghar</option>
+	<option value="162">Trinda Sawai Khan</option>
+	<option value="163">Tulamba</option>
+	<option value="200">Turbat</option>
+	<option value="164">Uch</option>
+	<option value="260">Umerkot</option>
+	<option value="301">Upper Dir</option>
+	<option value="201">Usta Muhammad</option>
+	<option value="302">Utmanzai</option>
+	<option value="165">Vehari</option>
+	<option value="166">Wah Cantonment</option>
+	<option value="167">Warburton</option>
+	<option value="355">Washuk</option>
+	<option value="168">Wazirabad</option>
+	<option value="169">Yazman</option>
+	<option value="170">Zahir Pir</option>
+	<option value="303">Zaida</option>
+	<option value="202">Zhob</option>
+	<option value="203">Ziarat</option>
+
+</select></div>
+<div class="Wrp_Insert_Small"><span id="MainCPH_LBL_PRIORITY_ID" class="Wrp_Insert_Small_Label">Priority</span><select name="ctl00$MainCPH$UI_PRIORITY_ID" id="MainCPH_UI_PRIORITY_ID" class="Wrp_Insert_Small_DD">
+	<option value="1">Normal</option>
+	<option value="2">Urgent</option>
+	<option value="3">Most Urgent</option>
+
+</select></div>
+
+      
+
+
+
+<div class="Wrp_Insert_Small"><span id="MainCPH_LBL_FROM_DEPARTMENT_ID" class="Wrp_Insert_Small_Label">Dept. Type<i class="sm-lbl"> (From)</i></span>
+    <select name="ctl00$MainCPH$UI_FROM_DEPARTMENT_ID" onchange="javascript:setTimeout(&#39;__doPostBack(\&#39;ctl00$MainCPH$UI_FROM_DEPARTMENT_ID\&#39;,\&#39;\&#39;)&#39;, 0)" id="MainCPH_UI_FROM_DEPARTMENT_ID" class="Wrp_Insert_Small_DD">
+	<option selected="selected" value="1">Individual</option>
+	<option value="2">Police/ Law Enforcement Agencies</option>
+	<option value="3">Armed Forces</option>
+	<option value="4">Courts</option>
+	<option value="5">Embassies</option>
+	<option value="6">Banking Sector</option>
+	<option value="7">Education Sector</option>
+	<option value="8">Ministries</option>
+	<option value="9">Govt. Departments/ Authorities</option>
+	<option value="10">Private Sector</option>
+	<option value="11">Non Government Organizations</option>
+	<option value="12">Others</option>
+	<option value="13">PM's Performance Delivery Unit - PMDU</option>
+
+</select></div>
+<div class="Wrp_Insert_Small"><span id="MainCPH_LBL_FROM_DEPARTMENT_DETAILS_ID" class="Wrp_Insert_Small_Label">Dept. Name<i class="sm-lbl"> (From)</i></span>
+    <select name="ctl00$MainCPH$UI_FROM_DEPARTMENT_DETAILS_ID" id="MainCPH_UI_FROM_DEPARTMENT_DETAILS_ID" class="Wrp_Insert_Small_DD">
+	<option value="1">Individual</option>
+
+</select></div>
+
+
+
+
+<div class="Wrp_Insert_Small"><span id="MainCPH_LBL_DOCUMENT_NBR" class="Wrp_Insert_Small_Label">Reference No.</span><input name="ctl00$MainCPH$UI_DOCUMENT_NBR" type="text" maxlength="70" readonly="readonly" id="MainCPH_UI_DOCUMENT_NBR" class="Wrp_Insert_Small_Input"></div>
+<div class="Wrp_Insert_Small"><span id="MainCPH_LBL_DOCUMENT_DTE" class="Wrp_Insert_Small_Label">Dated</span><input name="ctl00$MainCPH$UI_DOCUMENT_DTE" type="text" readonly="readonly" id="MainCPH_UI_DOCUMENT_DTE" class="Wrp_Insert_Small_Input rt"></div>
+
+<div class="Wrp_Insert_Small"><span id="MainCPH_LBL_COMPLAINANT_NME" class="Wrp_Insert_Small_Label">Complainant Name</span><input name="ctl00$MainCPH$UI_COMPLAINANT_NME" type="text" value="Turab Ali Qureshi" maxlength="45" readonly="readonly" id="MainCPH_UI_COMPLAINANT_NME" class="Wrp_Insert_Small_Input"></div>
+<div class="Wrp_Insert_Small"><span id="MainCPH_LBL_GENDER" class="Wrp_Insert_Small_Label">Gender</span><select name="ctl00$MainCPH$UI_GENDER" id="MainCPH_UI_GENDER" class="Wrp_Insert_Small_DD">
+	<option selected="selected" value="Male">Male</option>
+	<option value="Female">Female</option>
+	<option value="Transgender">Transgender</option>
+
+</select></div>
+<div class="Wrp_Insert_Small"><span id="MainCPH_LBL_NATIONALITY_ID" class="Wrp_Insert_Small_Label">Nationality</span><select name="ctl00$MainCPH$UI_NATIONALITY_ID" id="MainCPH_UI_NATIONALITY_ID" class="Wrp_Insert_Small_DD">
+	<option value="1">Pakistan</option>
+	<option value="2">Afghanistan</option>
+	<option value="3">Albania</option>
+	<option value="4">Algeria</option>
+	<option value="5">Andorra</option>
+	<option value="6">Angola</option>
+	<option value="7">Antigua and Barbuda</option>
+	<option value="8">Argentina</option>
+	<option value="9">Armenia</option>
+	<option value="10">Australia</option>
+	<option value="11">Austria</option>
+	<option value="12">Azerbaijan</option>
+	<option value="13">Bahamas</option>
+	<option value="14">Bahrain</option>
+	<option value="15">Bangladesh</option>
+	<option value="16">Barbados</option>
+	<option value="17">Belarus</option>
+	<option value="18">Belgium</option>
+	<option value="19">Belize</option>
+	<option value="20">Benin</option>
+	<option value="21">Bhutan</option>
+	<option value="22">Bolivia</option>
+	<option value="23">Bosnia and Herzegovina</option>
+	<option value="24">Botswana</option>
+	<option value="25">Brazil</option>
+	<option value="26">Brunei</option>
+	<option value="27">Bulgaria</option>
+	<option value="28">Burkina Faso</option>
+	<option value="29">Burundi</option>
+	<option value="30">Cabo Verde</option>
+	<option value="31">Cambodia</option>
+	<option value="32">Cameroon</option>
+	<option value="33">Canada</option>
+	<option value="34">Central African Republic</option>
+	<option value="35">Chad</option>
+	<option value="36">Chile</option>
+	<option value="37">China</option>
+	<option value="38">Colombia</option>
+	<option value="39">Comoros</option>
+	<option value="40">Congo, Democratic Republic of the</option>
+	<option value="41">Congo, Republic of the</option>
+	<option value="42">Costa Rica</option>
+	<option value="43">Cote d'Ivoire</option>
+	<option value="44">Croatia</option>
+	<option value="45">Cuba</option>
+	<option value="46">Cyprus</option>
+	<option value="47">Czech Republic</option>
+	<option value="48">Denmark</option>
+	<option value="49">Djibouti</option>
+	<option value="50">Dominica</option>
+	<option value="51">Dominican Republic</option>
+	<option value="52">Ecuador</option>
+	<option value="53">Egypt</option>
+	<option value="54">El Salvador</option>
+	<option value="55">Equatorial Guinea</option>
+	<option value="56">Eritrea</option>
+	<option value="57">Estonia</option>
+	<option value="58">Ethiopia</option>
+	<option value="59">Fiji</option>
+	<option value="60">Finland</option>
+	<option value="61">France</option>
+	<option value="62">Gabon</option>
+	<option value="63">Gambia</option>
+	<option value="64">Georgia</option>
+	<option value="65">Germany</option>
+	<option value="66">Ghana</option>
+	<option value="67">Greece</option>
+	<option value="68">Grenada</option>
+	<option value="69">Guatemala</option>
+	<option value="70">Guinea</option>
+	<option value="71">Guinea-Bissau</option>
+	<option value="72">Guyana</option>
+	<option value="73">Haiti</option>
+	<option value="74">Honduras</option>
+	<option value="75">Hungary</option>
+	<option value="76">Iceland</option>
+	<option value="77">India</option>
+	<option value="78">Indonesia</option>
+	<option value="79">Iran</option>
+	<option value="80">Iraq</option>
+	<option value="81">Ireland</option>
+	<option value="82">Israel</option>
+	<option value="83">Italy</option>
+	<option value="84">Jamaica</option>
+	<option value="85">Japan</option>
+	<option value="86">Jordan</option>
+	<option value="87">Kazakhstan</option>
+	<option value="88">Kenya</option>
+	<option value="89">Kiribati</option>
+	<option value="90">Kosovo</option>
+	<option value="91">Kuwait</option>
+	<option value="92">Kyrgyzstan</option>
+	<option value="93">Laos</option>
+	<option value="94">Latvia</option>
+	<option value="95">Lebanon</option>
+	<option value="96">Lesotho</option>
+	<option value="97">Liberia</option>
+	<option value="98">Libya</option>
+	<option value="99">Liechtenstein</option>
+	<option value="100">Lithuania</option>
+	<option value="101">Luxembourg</option>
+	<option value="102">Macedonia</option>
+	<option value="103">Madagascar</option>
+	<option value="104">Malawi</option>
+	<option value="105">Malaysia</option>
+	<option value="106">Maldives</option>
+	<option value="107">Mali</option>
+	<option value="108">Malta</option>
+	<option value="109">Marshall Islands</option>
+	<option value="110">Mauritania</option>
+	<option value="111">Mauritius</option>
+	<option value="112">Mexico</option>
+	<option value="113">Micronesia</option>
+	<option value="114">Moldova</option>
+	<option value="115">Monaco</option>
+	<option value="116">Mongolia</option>
+	<option value="117">Montenegro</option>
+	<option value="118">Morocco</option>
+	<option value="119">Mozambique</option>
+	<option value="120">Myanmar (Burma)</option>
+	<option value="121">Namibia</option>
+	<option value="122">Nauru</option>
+	<option value="123">Nepal</option>
+	<option value="124">Netherlands</option>
+	<option value="125">New Zealand</option>
+	<option value="126">Nicaragua</option>
+	<option value="127">Niger</option>
+	<option value="128">Nigeria</option>
+	<option value="129">North Korea</option>
+	<option value="130">Norway</option>
+	<option value="131">Oman</option>
+	<option value="132">Palau</option>
+	<option value="133">Palestine</option>
+	<option value="134">Panama</option>
+	<option value="135">Papua New Guinea</option>
+	<option value="136">Paraguay</option>
+	<option value="137">Peru</option>
+	<option value="138">Philippines</option>
+	<option value="139">Poland</option>
+	<option value="140">Portugal</option>
+	<option value="141">Qatar</option>
+	<option value="142">Romania</option>
+	<option value="143">Russia</option>
+	<option value="144">Rwanda</option>
+	<option value="145">Samoa</option>
+	<option value="146">San Marino</option>
+	<option value="147">Sao Tome and Principe</option>
+	<option value="148">Saudi Arabia</option>
+	<option value="149">Senegal</option>
+	<option value="150">Serbia</option>
+	<option value="151">Seychelles</option>
+	<option value="152">Sierra Leone</option>
+	<option value="153">Singapore</option>
+	<option value="154">Slovakia</option>
+	<option value="155">Slovenia</option>
+	<option value="156">Solomon Islands</option>
+	<option value="157">Somalia</option>
+	<option value="158">South Africa</option>
+	<option value="159">South Korea</option>
+	<option value="160">South Sudan</option>
+	<option value="161">Spain</option>
+	<option value="162">Sri Lanka</option>
+	<option value="163">St. Kitts and Nevis</option>
+	<option value="164">St. Lucia</option>
+	<option value="165">St. Vincent and The Grenadines</option>
+	<option value="166">Sudan</option>
+	<option value="167">Suriname</option>
+	<option value="168">Swaziland</option>
+	<option value="169">Sweden</option>
+	<option value="170">Switzerland</option>
+	<option value="171">Syria</option>
+	<option value="172">Taiwan</option>
+	<option value="173">Tajikistan</option>
+	<option value="174">Tanzania</option>
+	<option value="175">Thailand</option>
+	<option value="176">Timor-Leste</option>
+	<option value="177">Togo</option>
+	<option value="178">Tonga</option>
+	<option value="179">Trinidad and Tobago</option>
+	<option value="180">Tunisia</option>
+	<option value="181">Turkey</option>
+	<option value="182">Turkmenistan</option>
+	<option value="183">Tuvalu</option>
+	<option value="184">Uganda</option>
+	<option value="185">Ukraine</option>
+	<option value="186">United Arab Emirates</option>
+	<option value="187">United Kingdom (UK)</option>
+	<option value="188">United States of America (USA)</option>
+	<option value="189">Uruguay</option>
+	<option value="190">Uzbekistan</option>
+	<option value="191">Vanuatu</option>
+	<option value="192">Vatican City (Holy See)</option>
+	<option value="193">Venezuela</option>
+	<option value="194">Vietnam</option>
+	<option value="195">Yemen</option>
+	<option value="196">Zambia</option>
+	<option value="197">Zimbabwe</option>
+
+</select></div>
+<div class="Wrp_Insert_Small"><span id="MainCPH_LBL_OCCUPATION_ID" class="Wrp_Insert_Small_Label">Occupation</span><select name="ctl00$MainCPH$UI_OCCUPATION_ID" id="MainCPH_UI_OCCUPATION_ID" class="Wrp_Insert_Small_DD">
+	<option value="1">Student</option>
+	<option value="2">Govt. Employee</option>
+	<option value="3">Armed Forces</option>
+	<option value="4">Judiciary</option>
+	<option value="5">Embassy </option>
+	<option value="6">Doctor</option>
+	<option value="7">Professor/ Lecturer/ Teacher</option>
+	<option value="8">Lawyer</option>
+	<option value="9">Banker</option>
+	<option value="10">Businessman</option>
+	<option value="11">Politician</option>
+	<option value="12">Show Business</option>
+	<option value="13">Housewife</option>
+	<option value="14">Journalist</option>
+	<option value="15">Landlord/ Agriculturist</option>
+	<option value="16">NGO</option>
+	<option value="17">Retired Officer/ Pensioner</option>
+	<option selected="selected" value="18">Private Job</option>
+	<option value="19">Others</option>
+	<option value="20">Overseas Pakistani</option>
+
+</select></div>
+<div class="Wrp_Insert_Small"><span id="MainCPH_LBL_CNIC_NBR" class="Wrp_Insert_Small_Label">CNIC No.</span><input name="ctl00$MainCPH$UI_CNIC_NBR" type="text" value="3520221935889" maxlength="13" readonly="readonly" id="MainCPH_UI_CNIC_NBR" class="Wrp_Insert_Small_Input rt"></div>
+<div class="Wrp_Insert_Small"><span id="MainCPH_LBL_PASSPORT_NBR" class="Wrp_Insert_Small_Label">Passport No.</span><input name="ctl00$MainCPH$UI_PASSPORT_NBR" type="text" maxlength="20" readonly="readonly" id="MainCPH_UI_PASSPORT_NBR" class="Wrp_Insert_Small_Input rt"></div>
+<div class="Wrp_Insert_Small"><span id="MainCPH_LBL_PHONE_NBR" class="Wrp_Insert_Small_Label">Mobile No.</span><input name="ctl00$MainCPH$UI_PHONE_NBR" type="text" value="03467941479" maxlength="15" id="MainCPH_UI_PHONE_NBR" class="Wrp_Insert_Small_Input rt"></div>
+<div class="Wrp_Insert_Small"><span id="MainCPH_LBL_LANDLINE_NO" class="Wrp_Insert_Small_Label">Landline No.</span><input name="ctl00$MainCPH$UI_LANDLINE_NO" type="text" value="02135306206" maxlength="15" id="MainCPH_UI_LANDLINE_NO" class="Wrp_Insert_Small_Input rt"></div>
+<div class="Wrp_Insert_Small"><span id="MainCPH_LBL_EMAIL_ID" class="Wrp_Insert_Small_Label">Email</span><input name="ctl00$MainCPH$UI_EMAIL_ID" type="text" value="turabaq@gmail.com" maxlength="45" readonly="readonly" id="MainCPH_UI_EMAIL_ID" class="Wrp_Insert_Small_Input"></div>
+
+<div class="Wrp_Insert_Large"><span id="MainCPH_LBL_COMPLAINANT_ADDRESS" class="Wrp_Insert_Large_Label">Address</span><textarea name="ctl00$MainCPH$UI_COMPLAINANT_ADDRESS" rows="2" cols="20" readonly="readonly" id="MainCPH_UI_COMPLAINANT_ADDRESS" class="Wrp_Insert_Large_Input">Flat 602, Building G-2, Hamilton Court, Block 7, Clifton</textarea></div>
+<div class="Wrp_Insert_Large"><span id="MainCPH_LBL_ADDRESS_CITY" class="Wrp_Insert_Large_Label">City</span><select name="ctl00$MainCPH$UI_ADDRESS_CITY" id="MainCPH_UI_ADDRESS_CITY" class="Wrp_Insert_Large_DD" readonly="true">
+	<option value="0"> Select City</option>
+	<option value="370">Chiran</option>
+	<option value="218">Karachi</option>
+	<option value="366">Karachi Central</option>
+	<option value="367">Karachi East</option>
+	<option selected="selected" value="368">Karachi South</option>
+	<option value="369">Karachi West</option>
+	<option value="371">Malir</option>
+
+</select></div>
+
+
+<div class="Wrp_Insert_Large"><span id="MainCPH_LBL_OFFENCE_ID" class="Wrp_Insert_Large_Label">Offence</span><select name="ctl00$MainCPH$UI_OFFENCE_ID" id="MainCPH_UI_OFFENCE_ID" class="Wrp_Insert_Large_DD">
+	<option value="0"> Select Offence Type</option>
+	<option value="1">Unauthorized access to information system or data - CCW</option>
+	<option value="2">Unauthorized copying or transmission of data - CCW</option>
+	<option value="3">Interference with information system or data - CCW</option>
+	<option value="4">Unauthorized access to critical infrastructure information system or data - CCW</option>
+	<option value="5">Unauthorized copying or transmission of critical infrastructure data - CCW</option>
+	<option value="6">Interference with critical infrastructure information system or data - CCW</option>
+	<option value="7">Glorification of an offence - CCW</option>
+	<option value="8">Cyber terrorism - CCW</option>
+	<option value="9">Hate speech - CCW</option>
+	<option value="10">Recruitment, funding and planning of terrorism - CCW</option>
+	<option value="11">Electronic forgery - CCW</option>
+	<option value="12">Electronic fraud - CCW</option>
+	<option value="13">Making, obtaining, or supplying device for use in offence - CCW</option>
+	<option value="14">Unauthorized use of identity information - CCW</option>
+	<option value="15">Unauthorized issuance of SIM cards etc. - CCW</option>
+	<option value="16">Tampering, etc. of communication equipment - CCW</option>
+	<option value="17">Unauthorized interception - CCW</option>
+	<option value="18">Offences against dignity of a natural person - CCW</option>
+	<option value="19">Offences against modesty of a natural person and minor - CCW</option>
+	<option value="20">Child pornography - CCW</option>
+	<option value="21">Malicious code - CCW</option>
+	<option value="22">Cyber Stalking - CCW</option>
+	<option value="23">Spamming - CCW</option>
+	<option value="24">Spoofing - CCW</option>
+	<option value="26">Irrelevant Complaint</option>
+	<option value="27">Invalid Complaint</option>
+	<option value="28">Already Exist</option>
+	<option value="53">Others Cybercrime - CCW</option>
+	<option value="54">Query/ Information</option>
+
+</select></div>
+<div class="Wrp_Insert_Small"><span id="MainCPH_LBL_CRIME_TYPE_DETAILS_ID" class="Wrp_Insert_Small_Label">Crime Type</span>
+    <select name="ctl00$MainCPH$UI_CRIME_TYPE_DETAILS_ID" id="MainCPH_UI_CRIME_TYPE_DETAILS_ID" class="Wrp_Insert_Small_DD">
+	<option value="0">Select Crime Type</option>
+	<option value="2">Fake Profile</option>
+	<option value="3">Hacking</option>
+	<option value="4">Harassment</option>
+	<option value="5">Pornography</option>
+	<option value="6">Threats</option>
+	<option value="7">Financial Frauds</option>
+	<option value="8">Identity Theft</option>
+	<option value="9">Blackmailing</option>
+	<option value="10">Blasphemous Contents</option>
+	<option value="11">Anti-Religion</option>
+	<option value="12">Anti-Army</option>
+	<option value="13">Anti-Govt.</option>
+	<option value="14">Defamation</option>
+	<option value="15">Illegal SIMs</option>
+	<option value="16">Lottery Frauds</option>
+	<option value="17">Online Banking Frauds</option>
+	<option value="18">Online Job Frauds</option>
+	<option value="19">Online Shopping</option>
+	<option value="20">Phishing</option>
+	<option value="21">Spamming</option>
+	<option value="22">Spoofing</option>
+	<option value="23">Stalking</option>
+	<option value="24">Un-authorized Access</option>
+	<option value="25">Invalid Complaint</option>
+	<option value="26">Misc.</option>
+	<option value="27">Digital Currency</option>
+	<option value="28">Child Pornography</option>
+	<option value="29">Sectarianism</option>
+	<option value="30">BISP</option>
+	<option value="31">RansomWare</option>
+	<option value="32">Irrelevant Complaint</option>
+	<option value="33">Anti - Juidiciary</option>
+	<option value="34">Ehsaas Program</option>
+
+</select></div>
+<div class="Wrp_Insert_Small"><span id="MainCPH_LBL_CRIME_MEDIUM_DETAILS_ID" class="Wrp_Insert_Small_Label">Medium Used</span>
+    <select name="ctl00$MainCPH$UI_CRIME_MEDIUM_DETAILS_ID" id="MainCPH_UI_CRIME_MEDIUM_DETAILS_ID" class="Wrp_Insert_Small_DD">
+	<option value="0">Select Medium Used</option>
+	<option value="2">Facebook</option>
+	<option value="3">WhatsApp</option>
+	<option value="4">Instagram</option>
+	<option value="5">Twitter</option>
+	<option value="6">Pinterest</option>
+	<option value="7">Snapchat</option>
+	<option value="8">LinkedIn</option>
+	<option value="9">Telegram</option>
+	<option value="10">YouTube</option>
+	<option value="11">Gmail</option>
+	<option value="12">Hotmail</option>
+	<option value="13">Yahoo</option>
+	<option value="14">Outlook</option>
+	<option value="15">ATM Card</option>
+	<option value="16">Credit Card</option>
+	<option value="17">IBFT</option>
+	<option value="18">Online Banking</option>
+	<option value="19">SMS</option>
+	<option value="20">JazzCash</option>
+	<option value="21">EasyPaisa</option>
+	<option value="22">Zong PayMax</option>
+	<option value="23">uPaisa</option>
+	<option value="24">UBL Omni</option>
+	<option value="25">Olx</option>
+	<option value="26">Website</option>
+	<option value="27">Email</option>
+	<option value="28">Others</option>
+	<option value="29">Social Media</option>
+	<option value="30">Phone Call</option>
+	<option value="31">Invalid Complaint</option>
+	<option value="32">Others</option>
+	<option value="33">Bitcoin</option>
+	<option value="34">One Coin</option>
+	<option value="35">Litecoin</option>
+	<option value="36">Cryptocurrency</option>
+	<option value="37">Tiktok</option>
+	<option value="38">Irrelevant Complaint</option>
+
+</select></div>
+<div class="Wrp_Insert_Large"><span id="MainCPH_LBL_DESCRIPTION" class="Wrp_Insert_Large_Label">Description</span><textarea name="ctl00$MainCPH$UI_DESCRIPTION" rows="2" cols="20" readonly="readonly" id="MainCPH_UI_DESCRIPTION" class="Wrp_Insert_XLarge_Input">I was contacted by an individual on Facebook (and later on WhatsApp) posing as my relative. He asked for money (PKR 90,000/-) which I transferred on his Jazz Cash accounts. The individual was a fraud and following are the Jazz Cash accounts he was using:
+
+JAZZCASH A/C
+03257735364
+MUHAMMAD IJAZ
+
+JAZZCASH A/C
+03265542139
+MUHAMMAD ASHRAF
+
+JAZZCASH A/C
+03261146957
+MUHAMMAD SHAHID 
+
+JAZZCASH A/C
+03266267580
+AZAM ALI
+
+</textarea></div>
+<div class="Wrp_Insert_Small"><span id="MainCPH_LBL_AMOUNT_INVOLVED" class="Wrp_Insert_Small_Label">Amount <i class="sm-lbl">(Involved)</i></span><input name="ctl00$MainCPH$UI_AMOUNT_INVOLVED" type="number" maxlength="11" id="MainCPH_UI_AMOUNT_INVOLVED" class="Wrp_Insert_Small_Input rt"></div>
+<div class="Wrp_Insert_Small"><span id="MainCPH_LBL_CURRENCY_ID" class="Wrp_Insert_Small_Label">Currency Type</span>
+    <select name="ctl00$MainCPH$UI_CURRENCY_ID" id="MainCPH_UI_CURRENCY_ID" class="Wrp_Insert_Small_DD">
+	<option value="1">Pakistani rupee - Rs</option>
+	<option value="2">United States dollar - US$</option>
+	<option value="3">Euro - €</option>
+	<option value="4">Japanese yen - ¥</option>
+	<option value="5">Pound sterling - £</option>
+	<option value="6">Australian dollar - A$</option>
+	<option value="7">Canadian dollar - C$</option>
+	<option value="8">Swiss franc - CHF</option>
+	<option value="9">Renminbi - 元</option>
+	<option value="10">Hong Kong dollar - HK$</option>
+	<option value="11">New Zealand dollar - NZ$</option>
+	<option value="12">Swedish krona - kr</option>
+	<option value="13">South Korean won - ₩</option>
+	<option value="14">Singapore dollar - S$</option>
+	<option value="15">Norwegian krone - kr</option>
+	<option value="16">Mexican peso - $</option>
+	<option value="17">Indian rupee - ₹</option>
+	<option value="18">Russian ruble - ₽</option>
+	<option value="19">South African rand - R</option>
+	<option value="20">Turkish lira - ₺</option>
+	<option value="21">Brazilian real - R$</option>
+	<option value="22">New Taiwan dollar - NT$</option>
+	<option value="23">Danish krone - kr</option>
+	<option value="24">Polish zloty - zł</option>
+	<option value="25">Thai baht - ฿</option>
+	<option value="26">Indonesian rupiah - Rp</option>
+	<option value="27">Hungarian forint - Ft</option>
+	<option value="28">Czech koruna - Kč</option>
+	<option value="29">Israeli new shekel - ₪</option>
+	<option value="30">Chilean peso - CLP$</option>
+	<option value="31">Philippine peso - ₱</option>
+	<option value="32">UAE dirham - د.إ</option>
+	<option value="33">Colombian peso - COL$</option>
+	<option value="34">Saudi riyal - ﷼</option>
+	<option value="35">Malaysian ringgit - RM</option>
+	<option value="36">Romanian leu - L</option>
+	<option value="38">Kawaiti Dina - KWD</option>
+	<option value="39">Qatari Riyal - QAR</option>
+
+</select></div>
+
+
+        <div class="Wrp_Insert_Small"><span id="MainCPH_LBL_AGAINST_DEPARTMENT_DETAILS_ID" class="Wrp_Insert_Small_Label">Complaint Against</span><select name="ctl00$MainCPH$UI_AGAINST_DEPARTMENT_DETAILS_ID" id="MainCPH_UI_AGAINST_DEPARTMENT_DETAILS_ID" class="Wrp_Insert_Small_DD">
+	<option value="1">Individual</option>
+	<option value="233">Banking Sector</option>
+	<option value="234">State Bank of Pakistan</option>
+	<option value="235">Zarai Taraqiati Bank Limited</option>
+	<option value="236">Al Baraka Bank (Pakistan) Limited.</option>
+	<option value="237">Allied Bank Limited.</option>
+	<option value="238">Askari Bank Limited.</option>
+	<option value="239">Bank Alfalah Limited.</option>
+	<option value="240">Bank Al-Habib Limited.</option>
+	<option value="241">BankIslami Pakistan Limited.</option>
+	<option value="242">Citi Bank</option>
+	<option value="243">Deutsche Bank A.G.</option>
+	<option value="244">The Bank of Tokyo-Mitsubishi UFJ</option>
+	<option value="245">Dubai Islamic Bank Pakistan Limited.</option>
+	<option value="246">Faysal Bank Limited.</option>
+	<option value="247">First Women Bank Limited.</option>
+	<option value="248">Habib Bank Limited.</option>
+	<option value="249">Standard Chartered Bank (Pakistan) Limited.</option>
+	<option value="250">Habib Metropolitan Bank Limited.</option>
+	<option value="251">Industrial and Commercial Bank of China</option>
+	<option value="252">Industrial Development Bank of Pakistan</option>
+	<option value="253">JS Bank Limited.</option>
+	<option value="254">MCB Bank Limited.</option>
+	<option value="255">MCB Islamic Bank Limited.</option>
+	<option value="256">Meezan Bank Limited.</option>
+	<option value="257">National Bank of Pakistan</option>
+	<option value="258">S.M.E. Bank Limited.</option>
+	<option value="259">Samba Bank Limited.</option>
+	<option value="260">Silk Bank Limited</option>
+	<option value="261">Sindh Bank Limited.</option>
+	<option value="262">Soneri Bank Limited.</option>
+	<option value="263">Summit Bank Limited.</option>
+	<option value="264">The Bank of Khyber.</option>
+	<option value="265">The Bank of Punjab.</option>
+	<option value="266">The Punjab Provincial Cooperative Bank Limited.</option>
+	<option value="267">United Bank Limited.</option>
+	<option value="269">Ministry of Commerce and Textile Industry</option>
+	<option value="270">Ministry of Communications</option>
+	<option value="271">Ministry of Defence</option>
+	<option value="272">Ministry of Defence Production</option>
+	<option value="273">Ministry of Finance, Revenue and Economic Affairs</option>
+	<option value="274">Ministry of Foreign Affairs</option>
+	<option value="275">Ministry of Housing and Works</option>
+	<option value="276">Ministry of Human Rights</option>
+	<option value="277">Ministry of Industries and Production</option>
+	<option value="278">Ministry of Information Technology and Telecommunication</option>
+	<option value="279">Ministry of Interior and Narcotics Control</option>
+	<option value="280">Ministry of Inter-Provincial Coordination</option>
+	<option value="281">Ministry of Kashmir Affairs and Gilgit Baltistan</option>
+	<option value="282">Ministry of Law and Justice</option>
+	<option value="283">Ministry of Parliamentary Affairs</option>
+	<option value="284">Ministry of Planning and Development</option>
+	<option value="285">Ministry of Ports and Shipping</option>
+	<option value="286">Ministry of Railways</option>
+	<option value="287">Ministry of Science and Technology</option>
+	<option value="288">Ministry of States and Frontier Regions</option>
+	<option value="289">Ministry of Water and Power</option>
+	<option value="290">Ministry of Information, Broadcasting, National History and Literary Heritage</option>
+	<option value="291">Auditor General of Pakistan</option>
+	<option value="292">Capital Development Authority</option>
+	<option value="293">Civil Aviation Authority</option>
+	<option value="294">Defence Housing Authority</option>
+	<option value="295">Earthquake Reconstruction and Rehabilitation Authority</option>
+	<option value="296">National Counter Terrorism Authority</option>
+	<option value="297">National Database and Registration Authority</option>
+	<option value="298">National Disaster Management Authority</option>
+	<option value="299">National Electric Power Regulatory Authority</option>
+	<option value="300">National Highway Authority</option>
+	<option value="301">Oil and Gas Regulatory Authority</option>
+	<option value="302">Pakistan Electronic Media Regulatory Authority</option>
+	<option value="303">Pakistan Telecommunication Authority</option>
+	<option value="304">Public Procurement Regulatory Authority</option>
+	<option value="305">Water and Power Development Authority</option>
+	<option value="306">Election Commission of Pakistan</option>
+	<option value="307">Employees Old-Age Benefits Institution</option>
+	<option value="308">Frontier Constabulary</option>
+	<option value="309">Frontier Corps</option>
+	<option value="310">Gilgit Baltistan Scout</option>
+	<option value="311">Govt Sector</option>
+	<option value="312">Higher Education Commission of Pakistan</option>
+	<option value="313">Immigration and Passports</option>
+	<option value="314">National Academy for Prisons Administration</option>
+	<option value="315">National Commission for Human Development</option>
+	<option value="316">National Crises Management Cell</option>
+	<option value="317">National Information Technology Board</option>
+	<option value="318">National Institute of Health</option>
+	<option value="319">National Telecommunication Corporation</option>
+	<option value="320">Oil and Gas Development Company</option>
+	<option value="321">Overseas Pakistanis Foundation</option>
+	<option value="322">Pakistan Agricultural Storage and Services Corporation</option>
+	<option value="323">Pakistan Bait-ul-Mal</option>
+	<option value="324">Pakistan Broadcasting Corporation</option>
+	<option value="325">Pakistan Coast Guards</option>
+	<option value="326">Pakistan Engineering Council</option>
+	<option value="327">Pakistan International Airlines Corporation</option>
+	<option value="328">Pakistan Medical and Dental Council</option>
+	<option value="329">Pakistan National Guard</option>
+	<option value="330">Pakistan Petroleum</option>
+	<option value="331">Pakistan Post</option>
+	<option value="332">Pakistan Railways</option>
+	<option value="333">Pakistan Software Export Board</option>
+	<option value="334">Pakistan State Oil</option>
+	<option value="335">Pakistan Steel Mills</option>
+	<option value="336">Pakistan Telecommunications Company Limited</option>
+	<option value="337">Pakistan Television Corporation</option>
+	<option value="338">Pakistan Tourism Development Corporation</option>
+	<option value="339">Special Tribunals and Boards</option>
+	<option value="340">State Life Insurance Corporation of Pakistan</option>
+	<option value="341">Sui Northern Gas Pipelines Limited</option>
+	<option value="342">Sui Southern Gas Company</option>
+	<option value="343">Utility Stores Corporation</option>
+	<option value="344">Pakistan Hockey Federation</option>
+	<option value="345">Government of the Punjab</option>
+	<option value="346">Punjab Commission of the status of Women</option>
+	<option value="347">Complaint Cell,Chief Minister Office, Punjab</option>
+	<option value="348">Prime Minister Citizen Portal, Pakistan</option>
+	<option value="349">Wafaqi Mohtasib</option>
+	<option value="350">President Secretariate</option>
+	<option value="351">Prime Minister Office</option>
+	<option value="352">Cabinet Division</option>
+	<option value="353">Non Government Organizations</option>
+	<option value="354">Transparent Hands</option>
+	<option value="355">PCHF (Pakistan Children’s Heart Foundation)</option>
+	<option value="356">Site Foundation (Society for Incentive Travel Excellence)</option>
+	<option value="357">Edhi Foundation</option>
+	<option value="358">Shaukat Khanum Cancer Hospital</option>
+	<option value="359">Chhipa Welfare Association</option>
+	<option value="360">Aurat Foundation</option>
+	<option value="361">Shahid Afridi Foundation</option>
+	<option value="362">Ansar Burney Trust International</option>
+	<option value="363">Darul Sukun</option>
+	<option value="364">Minhaj Welfare Foundation (MWF)</option>
+	<option value="365">Aga Khan Foundation</option>
+	<option value="366">Al-Khidmat Foundation Pakistan</option>
+	<option value="367">EHSAS (Education, Health, and Social Achievement Services)</option>
+	<option value="368">Fatimid Foundation</option>
+	<option value="369">Fauji Foundation</option>
+	<option value="370">Khushal Pakistan</option>
+	<option value="371">Save the Children</option>
+	<option value="372">The Citizens Foundation (TCF)</option>
+	<option value="373">Muslim Aid Pakistan</option>
+	<option value="374">Others</option>
+	<option value="375">Education Sector</option>
+	<option value="376">Private Sector</option>
+	<option value="377">Fisheries Department - ICT</option>
+	<option value="378">Anti-Corruption Sindh</option>
+	<option value="379">Anti-Corruption Punjab</option>
+	<option value="380">Federal Investigation Agency</option>
+	<option value="10378">Overseas Pakistanis Commission, Punjab</option>
+	<option value="20378">Corporate Sector</option>
+	<option value="20379">Cooperative Housing Socities</option>
+	<option value="20380">Bureau of Emigration and Overseas Employment</option>
+	<option value="20381">Ministry of Climate Change</option>
+	<option value="20382">Security Exchange Commission of Pakistan</option>
+	<option value="20383">Sukkur Electric Power Company - SEPCO</option>
+	<option value="20384">Islamabad Electric Supply Company - IESCO</option>
+	<option value="20385">Multan Electric Power Company - MEPCO</option>
+	<option value="20386">Lahore Electric Supply Company - LESCO</option>
+	<option value="20506">Commissionerate for Afghan Refugees</option>
+	<option value="20507">DMG Group</option>
+	<option value="20508">Federal Board of Revenue - FBR</option>
+	<option value="20509">Federal Public Service Commission - FPSC</option>
+	<option value="20510">Local Government</option>
+	<option value="20512">Ministry of Energy</option>
+	<option value="20513">Ministry of Environment, Forest and Climate Change</option>
+	<option value="20514">National Savings, Pakistan</option>
+	<option value="20515">Pakistan Electric Power Company</option>
+	<option value="20516">Pakistan Public Works Department</option>
+	<option value="20517">Private Housing Society</option>
+	<option value="20518">Private Medical College</option>
+	<option value="20519">Quetta Electric Supply Company - QESCO</option>
+	<option value="20520">Sindh Board of Revenue</option>
+	<option value="20521">Sindh Food Authority</option>
+	<option value="20522">Town Planning Department</option>
+	<option value="20523">Travel Agency</option>
+	<option value="20524">Tribal Electric Supply Company - TESCO</option>
+	<option value="20525">Worker Welfare Board</option>
+	<option value="20526">Peshawar Electric Power Company - PESCO
+</option>
+	<option value="20527">Gujranwala Electric Power Company - GEPCO
+</option>
+	<option value="20528">Hyderabad Electric Supply Company - HESCO</option>
+
+</select></div>
+
+
+
+<div class="Wrp_Insert_Large"><span id="MainCPH_LBL_PERSON_INVOLVED" class="Wrp_Insert_Large_Label">Person <i class="sm-lbl">(Involved)</i></span><textarea name="ctl00$MainCPH$UI_PERSON_INVOLVED" rows="2" cols="20" id="MainCPH_UI_PERSON_INVOLVED" class="Wrp_Insert_Large_Input"></textarea></div>
+<div class="Wrp_Insert_Large"><span id="MainCPH_LBL_MOBILE_NBR_INVOLVED" class="Wrp_Insert_Large_Label">Mobile No. <i class="sm-lbl">(Involved)</i></span><textarea name="ctl00$MainCPH$UI_MOBILE_NBR_INVOLVED" rows="2" cols="20" id="MainCPH_UI_MOBILE_NBR_INVOLVED" class="Wrp_Insert_Large_Input"></textarea></div>
+<div class="Wrp_Insert_Large"><span id="MainCPH_LBL_URL_ADDRESS" class="Wrp_Insert_Large_Label">URL/ Email <i class="sm-lbl">(Involved)</i></span><textarea name="ctl00$MainCPH$UI_URL_ADDRESS" rows="2" cols="20" id="MainCPH_UI_URL_ADDRESS" class="Wrp_Insert_Large_Input"></textarea></div>
+
+
+	
+	<div class="Wrp_UI_BTN_Area">
+        <input type="submit" name="ctl00$MainCPH$BTN_SAVE" value="   Save   " id="MainCPH_BTN_SAVE" class="Wrp_UI_BTN btn-blue">
+        <input type="submit" name="ctl00$MainCPH$BTN_CLEAR" value="   Clear   " id="MainCPH_BTN_CLEAR" class="Wrp_UI_BTN btn-red "><br><br>
+        <span id="MainCPH_LBL_ERROR" style="color:Red;font-size:Medium;"></span>
+        <br>
+	</div>
+	
+	
+	
+	
+	
+
+
+
+        
+        
+        
+
+
+
+
+
+
+
+
+
+	
+
+	
+	
+	
+	         </div>
+
+       
+        <footer class="w3-container w3-padding-16 w3-light-grey">
+    
+        <div id="WrpContentCopyRights">
+        Unauthorized access is strictly prohibited.<br>
+        Your IP address is being monitored for security purposes.<br>
+        <b>Confidentiality of Access ID &amp; Password</b> is solely the responsibility of the concerned individual.<br>
+        <h5>Federal Investigation Agency © All Rights Reserved.</h5>
+</div>
+    
+  </footer>
+
+  
+</div>
+
+
+    
+
+<script>
+    // Get the Sidebar
+    var mySidebar = document.getElementById("mySidebar");
+
+    // Get the DIV with overlay effect
+    var overlayBg = document.getElementById("myOverlay");
+
+    // Toggle between showing and hiding the sidebar, and add overlay effect
+    function w3_open() {
+        if (mySidebar.style.display === 'block') {
+            mySidebar.style.display = 'none';
+            overlayBg.style.display = "none";
+        } else {
+            mySidebar.style.display = 'block';
+            overlayBg.style.display = "block";
+        }
+    }
+
+    // Close the sidebar with the close button
+    function w3_close() {
+        mySidebar.style.display = "none";
+        overlayBg.style.display = "none";
+    }
+</script>
+
+    
+
+
+
+</body></html>
